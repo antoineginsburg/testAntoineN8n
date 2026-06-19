@@ -6,6 +6,8 @@ public class Main {
         System.out.println("Hello, World!");
         Integer param = RandomGenerator.getDefault().nextInt();
         boolean emailUserPresent = verificationEmail(param);
+        String msg = emailUserPresent ? "l'utilisateur a un email" : "l'utilisateur n'a pas d'amil";
+        System.out.println(msg);
     }
 
     private static boolean verificationEmail(Integer param) {
